@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(43, 43, 43);
+    
+    h1{
+        border: 13px solid rgb(43, 43, 43);
+        padding: 15px;
+        cursor: default;
+    }
+}

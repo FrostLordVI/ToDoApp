@@ -1,0 +1,44 @@
+
+.container-inputField-timeSection{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        width: 40px;
+        height: 20px;
+        font-size: 12px ;
+        text-align: center;
+        color:rgb(43, 43, 43);
+        outline: none;
+        border: none;
+        padding: 0px;
+        border-radius: 3px;
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        transition: all .15s ease-in-out ;
+        cursor: pointer;
+        margin: 0px;
+        width: 50px;
+        font-size: 15px;
+        height: 30px;
+    }
+
+    input:hover,input:focus{
+        background: rgba(0, 0, 0, 0);
+        color:rgb(43, 43, 43); 
+      }
+}
+
+span:hover{
+    background: rgba(0, 0, 0, 0.3);
+    color:rgb(43, 43, 43); 
+  }

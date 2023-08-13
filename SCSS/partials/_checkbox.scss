@@ -1,0 +1,33 @@
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: background-color 0.01s, opacity 0.01s;
+    clip-path: polygon(79% 5%, 100% 20%, 50% 100%, 12% 69%, 27% 49%, 44% 61%);
+  }
+  
+ 
+  input[type="checkbox"]:not(:checked) {
+    background-color: black;
+    opacity: 0.13;
+  }
+  
+
+  input[type="checkbox"]:checked {
+    background-color: rgb(24, 146, 24);
+    opacity: 1;
+  }
+  input[type="checkbox"]:checked:hover {
+    background-color: rgb(24, 146, 24);
+    opacity: 1;
+  }
+  input[type="checkbox"]:not(:checked):hover {
+    background-color: rgba(0, 255, 85, 0.507);
+    opacity: .8;
+  }

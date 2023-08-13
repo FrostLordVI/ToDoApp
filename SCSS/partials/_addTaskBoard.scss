@@ -1,0 +1,58 @@
+.addTaskBoard{
+    display: flex;
+}
+
+@media screen and (max-width:650px){
+    main{
+        max-width: 90vw;
+
+        .container-inputField{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90vw;
+        }
+
+        .container-inputField-timeSection{
+            flex-direction: row;
+            max-width: 90vw;
+        }
+
+      span.timeSection-time{
+        margin: 0;
+        margin-left: 5px;
+      }
+
+      span.timeSection-date{
+        margin: 0;
+        margin-right: 5px;
+      }
+
+      p.item-contentTask{
+        font-size: 20px;
+      }
+
+
+      p.taskListBoard-item-dateTime{
+        font-size: 12px;
+      }
+
+      .task{
+        padding: 5px 0;
+
+        input{
+            margin: 10px 8px 10px 2px;
+        }
+      }
+
+      .delTaskBtn{
+        margin: 10px 8px 10px 7px;
+      }
+
+      .taskListBoard-item-dateTimeField{
+        margin-left:8px;
+      }
+
+    }
+}

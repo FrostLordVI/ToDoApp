@@ -1,0 +1,281 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(43, 43, 43);
+}
+header h1 {
+  border: 13px solid rgb(43, 43, 43);
+  padding: 15px;
+  cursor: default;
+}
+
+.addTaskBoard {
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    max-width: 90vw;
+  }
+  main .container-inputField {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  main .container-inputField-timeSection {
+    flex-direction: row;
+    max-width: 90vw;
+  }
+  main span.timeSection-time {
+    margin: 0;
+    margin-left: 5px;
+  }
+  main span.timeSection-date {
+    margin: 0;
+    margin-right: 5px;
+  }
+  main p.item-contentTask {
+    font-size: 20px;
+  }
+  main p.taskListBoard-item-dateTime {
+    font-size: 12px;
+  }
+  main .task {
+    padding: 5px 0;
+  }
+  main .task input {
+    margin: 10px 8px 10px 2px;
+  }
+  main .delTaskBtn {
+    margin: 10px 8px 10px 7px;
+  }
+  main .taskListBoard-item-dateTimeField {
+    margin-left: 8px;
+  }
+}
+button {
+  color: rgb(43, 43, 43);
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 13px;
+  width: 130px;
+  font-size: 20px;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(43, 43, 43);
+}
+
+.delTaskBtn {
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  width: 45px;
+  height: 45px;
+}
+
+.delTaskBtn:hover {
+  background-color: rgb(161, 0, 54);
+}
+
+input[type=checkbox] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 55px;
+  height: 55px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transition: background-color 0.01s, opacity 0.01s;
+  clip-path: polygon(79% 5%, 100% 20%, 50% 100%, 12% 69%, 27% 49%, 44% 61%);
+}
+
+input[type=checkbox]:not(:checked) {
+  background-color: black;
+  opacity: 0.13;
+}
+
+input[type=checkbox]:checked {
+  background-color: rgb(24, 146, 24);
+  opacity: 1;
+}
+
+input[type=checkbox]:checked:hover {
+  background-color: rgb(24, 146, 24);
+  opacity: 1;
+}
+
+input[type=checkbox]:not(:checked):hover {
+  background-color: rgba(0, 255, 85, 0.507);
+  opacity: 0.8;
+}
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(212, 70, 203) 3%, rgb(79, 167, 255) 38%, rgb(48, 238, 226) 68%, rgb(248, 255, 182) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+input, span {
+  color: rgb(43, 43, 43);
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  margin: 10px;
+  width: 250px;
+  font-size: 25px;
+  height: 93px;
+  text-align: center;
+}
+
+input:hover, input:focus {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(43, 43, 43);
+}
+
+input::placeholder {
+  color: rgb(43, 43, 43);
+}
+
+.container-inputField {
+  display: flex;
+}
+
+input {
+  margin-right: 13px;
+}
+
+.container-inputField-timeSection {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  width: 150px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span input {
+  width: 40px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(43, 43, 43);
+  outline: none;
+  border: none;
+  padding: 0px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  margin: 0px;
+  width: 50px;
+  font-size: 15px;
+  height: 30px;
+}
+span input:hover, span input:focus {
+  background: rgba(0, 0, 0, 0);
+  color: rgb(43, 43, 43);
+}
+
+span:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: rgb(43, 43, 43);
+}
+
+.taskListBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskListBoard-item {
+  width: 636px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 35px;
+  background-color: rgba(0, 0, 0, 0.116);
+  margin-top: 13px;
+  padding: 0 15px 0 15px;
+}
+
+.task.done {
+  background: linear-gradient(90deg, rgba(0, 255, 76, 0.616) 0%, rgba(0, 218, 223, 0) 85%);
+}
+
+p {
+  color: rgb(43, 43, 43);
+  cursor: default;
+}
+
+.taskListBoard-item-dateTimeField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.taskListBoard-item-dateTime {
+  margin: 5px 0px;
+  font-size: 18px;
+}
+
+.timeSection-date {
+  margin-bottom: 11.5px;
+}
+
+.timeSection-time {
+  margin-top: 11.5px;
+}
+
+/*# sourceMappingURL=App.css.map */
